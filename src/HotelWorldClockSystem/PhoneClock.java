@@ -24,7 +24,6 @@ public class PhoneClock extends Clock{
 	
 	@Override
 	public int getTime() {
-		// TODO Auto-generated method stub
 		return (super.utcOffSet + super.utcZeroTime + 24) % 24;
 	}
 
