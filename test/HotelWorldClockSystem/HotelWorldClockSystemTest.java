@@ -1,7 +1,6 @@
 package HotelWorldClockSystem;
 
-import static org.junit.Assert.assertEquals;
-
+import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,8 +10,14 @@ public class HotelWorldClockSystemTest {
 	
 	@Before
 	public void initialize() {
+		System.out.println("Before!");
 		hotelWorldClockSystem = new HotelWorldClockSystem();
 		phoneClock = new PhoneClock(8);
+	}
+	
+	@org.junit.After
+	public void After() {
+		System.out.println("After!");
 	}
 	
 	@Test
